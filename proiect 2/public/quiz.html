@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Marvel Quiz</title>
+    <meta name="autor" content="Dumitrascu Elena">
+    <meta name="keywords" content="Supereroi Marvel">
+    <link rel="icon" href="favicon.marvel.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="quiz-style.css" type="text/css">
+    <script src="quiz_script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav>
+        <a href="pagprincipala.html"><img src="./poze/logo.png" width="100" height="40" alt="nu merge"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="istorie.html">ISTORIE</a></li>
+                <li><a href="#">FILME  </a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="filme.html">MCU</a></li>
+                            <li><a href="filme2.html">EROI</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="quiz.html">QUIZ</a></li>
+            </ul>
+        </div>
+    </nav>
+<div class="quizstyle">
+    <h1>Marvel Quiz</h1>
+    <form id="quizForm">
+        <fieldset> 
+            <p>Completeaza acest quiz pentru a avea sansa sa te intalnesti cu supereroul favorit!</p>
+        </fieldset>
+        <fieldset>
+            <legend>Introduceti numele:</legend>
+            <input type="text" id="nameInput" >
+        </fieldset>        
+        <fieldset>  <!--pun nume dif ca sa pot selecta cate un rasp pt fiecare nume -->
+            <legend>Intrebarea 1: Care e numele real al lui Hulk?</legend>
+            <label><input type="radio" name="1" value="a"> Tony Stark</label><br>
+            <label><input type="radio" name="1" value="b"> Steve Rogers</label><br>
+            <label><input type="radio" name="1" value="c"> Bruce Banner</label><br>
+            <label><input type="radio" name="1" value="d"> Thor</label><br>
+        </fieldset> <!--radio ca sa se faca buton rotund -->
+        <fieldset>
+            <legend>Intrebarea 2: Cine sunt fratii lui Thor?</legend>
+            <label><input type="radio" name="2" value="a"> Tony Stark si Captain America</label><br>
+            <label><input type="radio" name="2" value="b"> Loki si Odin</label><br>
+            <label><input type="radio" name="2" value="c"> Loki si Heimdall</label><br>
+            <label><input type="radio" name="2" value="d"> Hela si Loki</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Intrebarea 3: Cine este cunoscut drept primul Avenger?</legend>
+            <label><input type="radio" name="3" value="a"> Iron man</label><br>
+            <label><input type="radio" name="3" value="b"> Spiderman</label><br>
+            <label><input type="radio" name="3" value="c"> Captain America</label><br>
+            <label><input type="radio" name="3" value="d"> Captain Marvel</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Intrebarea 4: Care e cel mai puternic metal?</legend>
+            <label><input type="radio" name="4" value="a"> Vibranium</label><br>
+            <label><input type="radio" name="4" value="b"> Titanium</label><br>
+            <label><input type="radio" name="4" value="c"> Gold</label><br>
+            <label><input type="radio" name="4" value="d"> Adamantiun</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>intrebarea 5: Care e numele real al supereroinei Black Widow?</legend>
+            <label><input type="radio" name="5" value="a"> Jessica Jones</label><br>
+            <label><input type="radio" name="5" value="b"> Wanda</label><br>
+            <label><input type="radio" name="5" value="c"> Natasha Romanoff</label><br>
+            <label><input type="radio" name="5" value="d"> Carol Danvers</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Intrebarea 6: Care e numele ciocanului lui Thor?</legend>
+            <label><input type="radio" name="6" value="a"> Mjolnir</label><br>
+            <label><input type="radio" name="6" value="b"> Stormbreaker</label><br>
+            <label><input type="radio" name="6" value="c"> Excalibur</label><br>
+            <label><input type="radio" name="6" value="d"> Gungnir</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Intrebarea 7: Care e numele sistemului artificial creat de Tony Stark?</legend>
+            <label><input type="radio" name="7" value="a"> Jarvis</label><br>
+            <label><input type="radio" name="7" value="b"> Thanos</label><br>
+            <label><input type="radio" name="7" value="c"> Ultron</label><br>
+            <label><input type="radio" name="7" value="d"> Groot</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Scrieti-va email-ul:</legend>
+            <label><input type="email" id="emailInput" required> </label>
+        </fieldset>
+        <fieldset>
+            <legend>Introduceti numarul de telefon:</legend>
+            <input type="tel" id="phoneInput">
+        </fieldset>        
+        
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

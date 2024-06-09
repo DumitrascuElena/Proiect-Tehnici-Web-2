@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.stiri{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.titlu h1{
+    font-size:70px;
+    text-align: center;
+    margin-top:15px;
+}
+
+.studio p{
+    font-size:25px;
+    margin-top:20px;
+    padding-top:70px;
+
+}
+.coloane{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imglee{
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    width: 50%;
+}
+.textlee{
+    
+    font-size:25px;
+    margin-top:20px;
+    padding-top:70px;
+    padding-bottom:100px;
+
+}
+
+.titluu h1{
+    font-size:50px;
+    text-align: center;
+    margin-top:60px;
+}
+.cariera{
+    
+    padding-bottom:100px;
+    
+}
+.cariera h3{
+    font-size:40px;
+}
+.cariera p{
+    font-size:25px;
+    margin-top:20px;
+    padding-top:70px;
+    text-align: center;
+
+}
+hr{
+    width:55%;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+/*  ecrane mai mici  */
+@media only screen and (max-width: 768px) {
+    .titlu h1, .titluu h1, .cariera h3 {
+        font-size: 25px;
+    }
+    .studio p, .textlee p, .cariera p {
+        font-size: 17px;
+    }
+    nav {
+        flex-direction: column;
+        padding: 2% 0;
+    }
+}
+.shield{
+
+    width: 10%;
+    animation-name: sh;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes sh
+{
+    30%{
+        transform: rotate(360deg);
+    }
+    50%{
+        transform: scale(2,2)
+    }
+    70%{
+        transform: translateX(700%);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+canvas {
+    display: block;
+    margin: 20px auto 0; 
+    max-width: 100%; /* pentru a evita depsirea dimensiunii ferestrei */
+    width: auto;
+    height: auto;
+  
+}

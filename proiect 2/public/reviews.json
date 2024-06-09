@@ -1,0 +1,74 @@
+{
+    "reviews": [
+        {
+            "film": "Avengers: Infinity War",
+            "review": "Răzbunătorii încearcă să oprească Thanos în timp ce adună Piatra Infinită pentru a-și schimba destinul universului.",
+            "rating": 9
+        },
+        {
+            "film": "Black Panther",
+            "review": "T'Challa, regele ascuns al Wakandei, se confruntă cu o vechime în conflict pentru a-și proteja țara și tehnologia avansată.",
+            "rating": 8
+        },
+        {
+            "film": "Deadpool",
+            "review": "Wade Wilson, un mercenar cu un simț al umorului negru, își ia un costum de super-erou și devine Deadpool.",
+            "rating": 8.5
+        },
+        {
+            "film": "X-Men: Days of Future Past",
+            "review": "X-Men trimit Wolverine în trecut pentru a schimba evenimentele care conduc la un viitor dominat de Sentinelii, mașinile ucigașe.",
+            "rating": 8
+        },
+        {
+            "film": "Iron Man",
+            "review": "Un început fantastic pentru Universul Cinematografic Marvel. Robert Downey Jr. oferă o interpretare carismatică a lui Tony Stark.",
+            "rating": 5
+        },
+        {
+            "film": "The Avengers",
+            "review": "O reuniune epică a eroilor care se adună pentru a salva lumea. Plin de acțiune și momente memorabile.",
+            "rating": 4.5
+        },
+        {
+            "film": "Guardians of the Galaxy",
+            "review": "O abordare revigorantă și plină de umor a genului de supereroi. Chimie fantastică între personaje.",
+            "rating": 4.7
+        },
+        {
+            "film": "Black Panther",
+            "review": "Un film revoluționar cu un impact cultural puternic. Interpretarea lui Chadwick Boseman în rolul lui T'Challa este puternică și inspiratoare.",
+            "rating": 5
+        },
+        {
+            "film": "Captain America: The Winter Soldier",
+            "review": "Un thriller politic captivant cu secvențe de acțiune intense. Dinamica dintre Captain America și Winter Soldier este convingătoare.",
+            "rating": 4.8
+        },
+        {
+            "film": "Spider-Man: Homecoming",
+            "review": "Tom Holland aduce o interpretare tânără și energică a lui Spider-Man. Echilibrul dintre viața de liceu a lui Peter Parker și responsabilitățile de supererou este bine realizat.",
+            "rating": 4.6
+        },
+        {
+            "film": "Thor: Ragnarok",
+            "review": "O aventură colorată și plină de umor care reinventează personajul Thor. Regia lui Taika Waititi aduce un ton unic și revigorant.",
+            "rating": 4.7
+        },
+        {
+            "film": "Avengers: Endgame",
+            "review": "O concluzie satisfăcătoare pentru peste un deceniu de povestiri. Emoționant, plin de acțiune și momente dedicate fanilor.",
+            "rating": 5
+        },
+        {
+            "film": "Doctor Strange",
+            "review": "Vizual uimitor cu efecte speciale care îți pun mintea la încercare. Interpretarea lui Benedict Cumberbatch în rolul Doctor Strange este captivantă.",
+            "rating": 4.5
+        },
+        {
+            "film": "Ant-Man",
+            "review": "Un film de supereroi de scară mică, plin de inimă și umor. Paul Rudd este fermecător și amuzant în rolul lui Scott Lang.",
+            "rating": 4.4
+        }
+    ]
+}

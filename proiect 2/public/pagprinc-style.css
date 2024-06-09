@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia';
+    
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-image: linear-gradient(rgba(89, 113, 165, 0.5),
+    rgba(89, 113, 165, 0.5)),url(./poze/marv1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.textcentru{
+    text-align: center;
+    padding-top: 200px;
+    color:rgb(255, 255, 255);
+
+}
+.textcentru h1{
+    font-size:50px;
+}
+.textcentru p{
+    font-size:20px;
+    margin-top:30px;
+    margin-bottom:30px;
+    
+}
+.textincepe{
+    text-decoration: none;
+    color: white;
+    display:inline-block;
+    border: 1px solid white;
+    padding: 10px 20px;
+    transition:1s;
+}
+.textincepe:hover{
+    background:#e65c3a;
+    width: 10%;
+}
+.imagine{
+    display:inline-block;
+    margin-left:20%;
+    margin-top: 80%;
+    width: 20px;
+    height: 20px;
+ 
+}
+#figure{
+    display: flex;
+    padding: 2% 3%;
+    justify-content: space-between;
+    align-items: flex-end;
+    color:white;
+    font-size: small;
+   
+}
+
+@media only screen and (max-width: 768px) {
+    #figure {
+      flex-direction: column; /* aliniaza imaginile vertical pe ecranele mici */
+      align-items: center; /* pe centru */
+    }
+    
+    .imagine {
+      width: 80px; 
+      height: 80px; 
+      margin: 10px auto; /*  marginile imaginilor pentru a le centra  */
+      margin-top: 20px; /* spatiu intre imaginile și textul de deasupra*/
+    }
+    .textcentru {
+      padding-top: 50px; /*spatiul de deasupra mai mic al textului pentru a face loc pentru imaginile deasupra lui */
+    }
+    
+}

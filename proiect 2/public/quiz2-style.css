@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia';
+}
+
+    html{
+        background-image: linear-gradient(rgba(110, 133, 183, 0.5),
+        rgba(136, 157, 201, 0.5)),url(./poze/rocket1.webp);
+        background-size:cover;
+    }
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+h1, p {
+    color: rgb(223, 229, 248);
+    font-weight: bold;
+    text-align: center; 
+    margin: 10px;
+    text-shadow: 2px 1px;
+    
+}
+p{font-size: 25px;}
+iframe{
+    
+    border-radius: 20px;
+    color: rgb(229, 237, 245);
+    padding: 20px 20px;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        background-size: contain; /* Imaginea de fundal sa incapa complet în container */
+    }
+    nav {
+        flex-direction: column;
+        padding: 2% 0;
+    }
+}

@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(64,85,131);
+}
+.eroi {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .hero {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* sa nu iasa tranzitia din imagine */
+    transition: transform 0.3s ease; /*transform ca sa fac scale*/
+  
+  }
+  
+  .hero:hover {
+    transform: scale(1.05);/*schimbam marimea la 105 %*/
+  }
+  
+  .hero h2 {
+    color: white;
+  
+  }
+  
+  .hero audio {
+    margin-bottom: 10px;
+  }
+
+  
+  .hero p {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero:before {
+    content: '';
+    position: absolute; /*se pozitioneaza unde trebuie*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    z-index: 0;
+    opacity: 0.8; /* opacitate initiala */
+  }
+  
+  .hero:hover:before {
+    opacity: 0.5; /* opacitate mai mica in hover*/
+  }
+  
+  #thor:before {
+    background-image: url('poze/thor.jpg');
+  }
+  
+  #ironman:before {
+    background-image: url('poze/iron.webp');
+  }
+  
+  #blackpanther:before {
+    background-image: url('poze/panther2.jpg');
+  }
+
+  #hulk:before {
+    background-image: url('poze/hulk2.jpg');
+  }
+  #spiderman:before {
+    background-image: url('poze/spiderman.webp');
+  }
+  #cpt:before {
+    background-image: url('poze/cpt2.webp');
+  }
+  #widow:before {
+    background-image: url('poze/widow2.jpg');
+  }
+  #gotg:before {
+    background-image: url('poze/gotg.jpg');
+  }
+  #marvel:before {
+    background-image: url('poze/marvel.jpg');
+  }
+  h1{
+    text-align: center;
+    color: white;
+  }
+
+  h2,.favorite { 
+    color: rgb(255, 255, 255); 
+    text-align: center;
+    margin-bottom: 12px;
+}
+.favorite{ font-size: 20px;}
+.highlight { 
+    background-color: rgb(132, 0, 255); 
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#listaFavorite, #listaPersonaje {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#nouPersonaj {
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-top: 12px;
+    padding: 8px;
+    border: 1px solid #cbd5f0;
+    border-radius: 4px;
+}
+
+#adaugaPersonaj, #salveazaFavorite, #evidentiazaToate , #stergeListaFavorite{
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-top: 12px;
+    padding: 12px 24px;
+    background-color: #2424f9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#adaugaPersonaj:hover, #salveazaFavorite:hover, #evidentiazaToate:hover, #stergeListaFavorite:hover {
+    background-color: #0056b3;
+}
+
+
+  /* pentru ecrane mici */
+@media only screen and (max-width: 768px) {
+  .eroi {
+      flex-direction: column; /* schimb directia flexului ca sa afisez eroii în coloane */
+      align-items: center;
+  }
+
+  .hero {
+      width: 90%; /* sa fie unul singur pe linie */
+      margin-bottom: 20px; /* spacing eroi */
+  }
+  nav {
+    flex-direction: column;
+    padding: 2% 0;
+}
+}
+
+

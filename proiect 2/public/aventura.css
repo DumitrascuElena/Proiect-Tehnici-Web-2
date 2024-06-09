@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(64,85,131);
+}
+h2{
+    text-align: center;
+}
+.facts {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .fact {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .fact h2 {
+    color: #333;
+    margin-top: 0;
+    font-size: 24px;
+  }
+  .fact p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .fact:last-child {
+    margin-bottom: 0;
+  }
+  .fact:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  @media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 2% 0;
+    }
+    .facts {
+        padding: 10px;
+    }
+}
+
+
+#filter, #mesajCuloare {
+    color:white; 
+}
+
+.personaj {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Culori */
+  .spiderman,.ironman, .deadpool, .vision {
+    background-color: #d40000; 
+    color: #fff;
+  }
+  
+  .captainamerica, .falcon,.antman {
+    background-color: #003366; 
+    color: #fff;
+  }
+  .wolverine{
+    background-color: #fbcd00; 
+    color: #fff;
+  }
+  .thor, .thor2, .war_machine, .eternals {
+    background-color: #ffe51dce; 
+    color: #000;
+  }
+  
+  .loki,.hulk {
+    background-color: #117111; 
+    color: #000;
+  }
+  
+  .blackwidow, .blackwidow2 {
+    background-color: #ff0000; 
+    color: #fff;
+  }
+  
+  .scarletwitch, .moonknight, .spiderwoman {
+    background-color: #ff6600; 
+    color: #000;
+  }
+  
+  .blackpanther, .blackpanther2 {
+    background-color: #000000; 
+    color: #fff;
+  }
+  
+  .thanos, .groot, .rocket, .hawkeye {
+    background-color: #808080; 
+    color: #fff;
+  }
+  
+  .doctorstrange, .quickilver, .blader {
+    background-color: #6600cc; 
+    color: #fff;
+  }
+  
+  .gamora, .shangchi, .shehulk, .ms_marvel {
+    background-color: #008000; 
+    color: #fff;
+  }
+  
+  .starlord, .winter_soldier, .katebishop {
+    background-color: #ff4500;
+    color: #fff;
+  }
+  
+  .blackbolt, .taskmaster {
+    background-color: #00008B;
+    color: #fff;
+  }
+  
+  .wanda, .spiderwoman2 {
+    background-color: #FFA07A; 
+    color: #000;
+  }
+  
+  

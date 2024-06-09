@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9dadf3;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.review {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.review p {
+    margin: 0.5rem 0;
+}
+@media only screen and (max-width: 768px) {
+    .review{
+        width:50%;
+    }
+  }
+
+  nav{
+    display: flex;
+    padding: 2% 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block; /*sa le faca pe orizontala*/
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: azure;
+    text-decoration: none; /*sa nu mi puna linia*/
+    font-size: 20px;
+    
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%; 
+    height: 2px;
+    background: #e65c3a;
+    display: block;
+    margin: auto; 
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%; 
+}
+.dropdown{
+    display: none; /* ascunde */
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(53, 59, 122);
+    text-align: center;
+    z-index:1; /*ca sa fie meniul dropdown deasupra la poze cand tin cursorul*/
+}
+.nav-links ul li:hover .dropdown{
+    display: block; 
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li{
+    width: 100px;
+    padding: 10px;
+}
+.dropdown ul li:nth-of-type(1) {
+   background-color: rgb(45, 8, 110);
+}
+.dropdown ul li:nth-of-type(2) {
+    background-color: rgb(5, 20, 96);
+ }
+
+ @media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 2% 0;
+    }
+  }

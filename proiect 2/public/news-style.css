@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: linear-gradient(rgba(89, 113, 165, 0.5),
+    rgba(89, 113, 165, 0.5)),url(./poze/newsphoto.jpg);
+    background-size: contain;
+
+}
+.reclame {
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* fixeaza pe ecran */
+  top: 60%; /* sa nu porneaza de sus de tot*/
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.reclama-stanga,
+.reclama-dreapta {
+  margin-bottom: 20px; /* spatiu intre reclame*/
+}
+
+.reclama-stanga img,
+.reclama-dreapta img {
+  display: block;
+  
+}
+
+@keyframes sliding {
+    from {
+        transform:translateX(0);
+    }
+    to {
+        transform:translateX(-100%);
+    }
+}
+.poze{
+    overflow: hidden; /*sa dispara scroll ul orizontal de jos*/
+    padding: 10px 0px;
+    background: rgb(255, 255, 255,0.6);
+    white-space: nowrap;/*sa ramana toate pe linie, indiferent de cum incap*/
+    
+}
+.poze-slide{
+    display:inline-block;
+    animation: 15s sliding infinite linear;
+}
+.poze-slide img{
+    height:70px;
+    margin: 0 5px;
+}
+.art{
+    width:40%;
+}
+iframe {
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    transition: width 1s ease-in-out 0.5s, height 1s ease-in-out 1s;
+  }
+  
+  iframe:hover {
+    width: 40%;
+    height: auto;
+  }
+section{
+margin: auto;
+  width: 50%;
+  
+  padding: 10px;
+  color:white;
+  text-align: center;
+
+}
+hr{
+    width:55%;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+@media only screen and (max-width: 768px) {
+    nav {
+      padding: 2% 1%;
+    }
+    .nav-links ul li {
+      padding: 8px 6px;
+    }
+    .poze-slide img {
+      height: 50px;
+      margin: 0 3px;
+    }
+    .art {
+      width: 70%;
+    }
+    section {
+      width: 90%;
+    }
+    nav {
+        flex-direction: column;
+        padding: 2% 0;
+    }
+    .reclama-stanga img,
+    .reclama-dreapta img {
+        max-width: 30%; /* sa fie poze mai mici pt ecrane mai mici; sa ocupe 30% din ecran */
+    }
+  }
+  
